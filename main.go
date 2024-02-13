@@ -1,6 +1,7 @@
 package main
 
 import (
+	"Calculo/models"
 	"bufio"
 	"fmt"
 	"os"
@@ -22,6 +23,7 @@ func main() {
 		}
 
 		fmt.Println("Resultado de la operación:", resultado)
+		models.ValorSistema()
 	}
 }
 func resolverOperacion(operacion string) (float64, error) {
